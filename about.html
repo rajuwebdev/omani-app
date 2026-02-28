@@ -51,25 +51,38 @@
 
     <!-- Navbar Start -->
     <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      class="navbar navbar-expand-lg bg-white navbar-light fixed-top animated-navbar"
     >
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <img class="logo" src="./img/omani-logo.png" />
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link active">About Us</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
-          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/omani-logo.png" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mobile-slide" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -169,20 +182,26 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <img class="footer-logo" src="./img/omani-logo.png" />
+            <img class="footer-logo" src="./img/omani-logo.png" alt="Logo" />
             <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <a
+                class="btn btn-square btn-outline-primary me-1"
+                href="https://www.instagram.com/the_omni_shield?igsh=YTVqZWJvZWZqMHZj"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="btn btn-square btn-outline-primary me-1"
+                href="https://www.facebook.com/TheOmniShield/"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                class="btn btn-square btn-outline-primary me-0"
+                href="https://www.linkedin.com/company/108280932/admin/page-posts/published/"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -190,7 +209,7 @@
             <p><i class="fa fa-map-marker-alt me-3"></i>Dubai, UAE</p>
             <p><i class="fa fa-phone-alt me-3"></i>+971 502176843</p>
             <p>
-              <i class="fa fa-envelope me-3"> </i>
+              <i class="fa fa-envelope me-3"></i>
               <a href="mailto:abin@theomnishield.com">abin@theomnishield.com</a>
             </p>
           </div>
@@ -204,7 +223,7 @@
       <div class="container-fluid copyright">
         <div class="container">
           <div class="row">
-            <div class="text-center mb-3 mb-md-0">
+            <div class="text-center text-dark mb-3 mb-md-0">
               &copy; 2026 The Omni Shield. All rights reserved.
             </div>
           </div>
@@ -215,8 +234,15 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+      ><i class="bi bi-arrow-up"></i></a>
+    <a
+      href="https://wa.me/+971502176843"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
